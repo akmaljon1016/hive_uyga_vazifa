@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive_uyga_vazifa/diolog_page.dart';
 
 late Box textBox;
 
@@ -8,7 +9,7 @@ void main() async {
   await Hive.initFlutter();
   textBox = await Hive.openBox("textBox");
   runApp(MaterialApp(
-    home: MyApp(),
+    home: DialogPage(),
   ));
 }
 
